@@ -6,7 +6,11 @@
   </head>
   
   <body>
-    <h2>Degen Fat Cats Imposter Check</h2>
+    <h2>Degen Fat Cats - GM / Mod / Data Nerd / Community Manager Discord Checker</h2>
+
+    <p>We will NEVER DM to ask you to send NFTs or Solana, connect your wallet to websites, or direct you to websites / downloads / programs in your DMs. </p>
+    <p>Any Discord communications from us will generally take place in the official Degen Fat Cats server.</p>
+    <p>That being said, imposters are rampant. Copy and paste a Discord ID number (e.g., 963491877557006356) into the box below to see if you're talking to a real fat cat or a fake skinny cat!</p>
 
     <form action=".">
       <label for="id">Discord ID:</label>
@@ -15,6 +19,9 @@
     </form>
 
     <p id="p1"></p>
+
+
+    <p>How to find Discord ID Number (video): <a href="https://streamable.com/6enj3">https://streamable.com/6enj3</a></p>
   </body>
 
   <script>
@@ -48,7 +55,7 @@
 
     if (dict.hasOwnProperty(id)) {
       document.getElementById("p1").innerHTML = "Verified Fat Cat: " + dict[id];
-    } else {
+    } else if (id != null) {
       document.getElementById("p1").innerHTML = "FAKE SKINNY CAT";
     }
   </script>
