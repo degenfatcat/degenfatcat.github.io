@@ -3,7 +3,7 @@
   font-family: 'Pixel';
   src: local('Pixel'),url(FreePixel.ttf) format('truetype');
 }
-
+  
 html {
   background: url('https://i.imgur.com/SKGV8ri.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
