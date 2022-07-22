@@ -13,5 +13,43 @@
       <input type="text" id="id" name="id"><br><br>
       <input type="submit" value="Submit">
     </form>
+
+    <p id="p1"></p>
   </body>
+
+  <script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const id = urlParams.get('id')
+
+    var dict = {
+      "693883747426238504": "Pairly#1907",
+      "963491877557006356": "Mr. Admin#9169",
+      "920835276853616651": "venomblack#6626",
+      "473977479502102539": "Ted#3117",
+      "189327967254609920": "RyanHirsch#5005",
+      "574955272204976130": "wings#3655",
+      "855524754675728416": "brody#4853",
+      "691012715921145918": "Lamz◎#0764",
+      "772849529040011314": "Kylie Gender 🌸#4890",
+      "127965953328676864": "BeanDip#1194",
+      "850988172162236426": "DegenFaragu#9191",
+      "142865292626886656": "Kentis#0988",
+      "301450228450459649": "Almu#4225",
+      "460124151860953095": "bigdaddydegen.sol#0001",
+      "893442255719899137": "calibre#8888",
+      "623917508205871104": "Zapisha#9999",
+      "817161884356313098": "Flesh Pistol#1217",
+      "958087011045089290": "LuckySol#7777",
+      "878823472384585808": "holy#6666",
+      "664000757523152898": "danza#6365",
+      "840834194271633418": "soulcrafter666#3835",
+    };
+
+    if (dict.hasOwnProperty(id)) {
+      document.getElementById("p1").innerHTML = "Verified Fat Cat: " + dict[id];
+    } else {
+      document.getElementById("p1").innerHTML = "FAKE SKINNY CAT";
+    }
+  </script>
   </html>
