@@ -15,11 +15,13 @@
     <form action=".">
       <label for="id">Discord ID:</label>
       <input type="text" id="id" name="id"><br><br>
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" style="font-family:'Pixel';">
     </form>
 
-    <p id="p1"></p>
-
+    <h3 id="good" style="color:green"></h3>
+    <h3 id="bad" style="color:red"></h3>
+    <img id="goodpic" src="images/IMG_0841.jpg" style="display: none;">
+    <img id="badpic" src="images/imposter.jpg" style="display: none;">
 
     <p>How to find Discord ID Number (video): <a href="https://streamable.com/6enj3">https://streamable.com/6enj3</a></p>
   </body>
@@ -54,9 +56,11 @@
     };
 
     if (dict.hasOwnProperty(id)) {
-      document.getElementById("p1").innerHTML = "Verified Fat Cat: " + dict[id];
+      document.getElementById("good").innerHTML = "Verified Fat Cat: " + dict[id];
+      document.getElementById("goodpic").style = "width:164px;height:200px;";
     } else if (id != null) {
-      document.getElementById("p1").innerHTML = "FAKE SKINNY CAT";
+      document.getElementById("bad").innerHTML = "FAKE SKINNY CAT!!";
+      document.getElementById("badpic").style = "width:164px;height:200px;";
     }
   </script>
   </html>
