@@ -25,7 +25,7 @@
     <img id="goodpic" src="images/goodcat.jpg" style="display: none;">
     <img id="badpic" src="images/imposter.jpg" style="display: none;">
 
-    <p>How to find Discord ID Number:</p>
+    <button style="font-family:'Pixel';" class="item">How to find Discord ID Number?</button>
     <div class="container">
       <iframe class="streamable-embed"
       src="https://streamable.com/o/6enj3"
@@ -35,6 +35,15 @@
   </body>
 
   <script>
+    function showImage() {
+      var image = document.querySelector(".container");
+      image.style["display"] = "block";
+    }
+
+    var el = document.querySelector(".item");
+    el.addEventListener("click", showImage, false);
+
+
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const id = urlParams.get('id')
