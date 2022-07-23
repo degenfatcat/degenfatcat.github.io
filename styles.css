@@ -19,3 +19,16 @@ body {
   height: 100vh !important;
   text-align: center;
 }
+
+.container{
+  width:100%;
+}
+
+#iframe1 {
+  position:absolute;
+  left: 0px;
+  min-width: 100%;
+  top: 0px;
+  overflow: auto;
+  min-height: 100%;
+}
