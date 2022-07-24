@@ -74,7 +74,7 @@
     };
 
     if (dict.hasOwnProperty(id)) {
-      document.getElementById("good").innerHTML = "Verified Fat Cat: " + dict[id];
+      document.getElementById("good").innerHTML = "<strong>Verified Fat Cat: " + dict[id]</strong>;
       document.getElementById("goodpic").style = "width:164px;height:200px;";
     } else if (id != null) {
       document.getElementById("bad").innerHTML = "<strong>FAKE SKINNY CAT!!</strong>";
