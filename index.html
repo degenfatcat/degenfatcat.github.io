@@ -10,9 +10,8 @@
   <body>
     <h2>Degen Fat Cats - Discord Checker</h2>
 
-    <p>We will NEVER DM you out of the blue to ask for NFTs/Solana, send you links/files, or anything else.</p>
-    <p>Discord communications from the team will generally take place in the <a href="discord.gg/degenfatcats">the official Degen Fat Cats discord server</a> and/or <a href="https://twitter.com/degenfatcats">Twitter</a>.</p>
-    <p>That being said, copy and paste a Discord ID number (e.g., 963491877557006356) into the box below to see if you're talking to a <span style="color:green;">Real Fat Cat </span>or a <span style="color:red;">Fake Skinny Cat (imposter)</span>!</p>
+    <div class="content><p>We will NEVER DM you out of the blue to ask for NFTs/Solana, send you links/files, or anything else. Communications from the team will take place in the <a href="discord.gg/degenfatcats">official Degen Fat Cats discord</a> and/or <a href="https://twitter.com/degenfatcats">Twitter</a>.</p>
+    <p>Copy and paste a Discord ID number (e.g., 963491877557006356) into the box below to see if you're talking to a <span style="color:green;">Real Fat Cat </span>or a <span style="color:red;">Fake Skinny Cat (imposter)</span>!</p></div>
 
     <form action=".">
       <label for="id">Discord ID:</label>
@@ -77,7 +76,7 @@
       document.getElementById("good").innerHTML = "Verified Fat Cat: " + dict[id];
       document.getElementById("goodpic").style = "width:164px;height:200px;";
     } else if (id != null) {
-      document.getElementById("bad").innerHTML = "FAKE SKINNY CAT!!";
+      document.getElementById("bad").innerHTML = "FAKE SKINNY CAT (IMPOSTER)!!";
       document.getElementById("badpic").style = "width:164px;height:200px;";
     }
   </script>
